@@ -1,0 +1,23 @@
+{
+  "name": "modularnode",
+  "version": "1.0.0",
+  "description": "Minimal, modular Node.js server with routing, validation, logging, and centralized error handling.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "NODE_ENV=production node src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "modular",
+    "router",
+    "validation"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
