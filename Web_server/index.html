@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-container">
+            <div class="card">
+                <div class="card__body">
+                    <h1 class="calculator-title">Square Calculator</h1>
+                    <p class="calculator-description">Enter a number to calculate its square</p>
+                    
+                    <form id="calculator-form" class="calculator-form">
+                        <div class="form-group">
+                            <label for="number-input" class="form-label">Number</label>
+                            <input 
+                                type="number" 
+                                id="number-input" 
+                                class="form-control number-input" 
+                                placeholder="Enter a number"
+                                step="any"
+                                autocomplete="off"
+                            >
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width calculate-btn">
+                            Calculate Square
+                        </button>
+                    </form>
+                    
+                    <div id="validation-messages" class="validation-messages hidden"></div>
+                    
+                    <div id="result-container" class="result-container hidden">
+                        <div class="result-card">
+                            <h3 class="result-title">Result</h3>
+                            <div class="result-display">
+                                <span class="result-equation" id="result-equation"></span>
+                                <span class="result-value" id="result-value"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
